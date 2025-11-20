@@ -229,7 +229,7 @@
                                         Akajiugo Charity Foundation is a <strong>social–cultural non-governmental organisation</strong> devoted to the <strong>welfare, protection, and empowerment of women and children</strong> in communities across Imo State.
                                     </p>
                                     <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                        <a href="d{% url 'donate' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@
                                         We provide <strong>child care assistance, maternal support, cultural guidance, and family-focused community outreach</strong> to strengthen homes and protect vulnerable women and children.
                                     </p>
                                     <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                        <a href="d{% url 'donate' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +275,7 @@
                                         Through <strong>cultural inclusion programs, family welfare advocacy, and community-driven outreach</strong>, we help create safer environments for children and more secure futures for women.
                                     </p>
                                     <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                        <a href="d{% url 'donate' %}" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -491,7 +491,7 @@
                     </div>
                     <div class="ul-project-txt">
                         <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Cultural Heritage Preservation</a></h3>
+                            <h3 class="ul-project-title"><a href="{% url 'projects' %}">Cultural Heritage Preservation</a></h3>
                             <p class="ul-project-descr">
                                 Organizing festivals, awareness campaigns, and cultural education programs to preserve our traditions and identity.
                             </p>
@@ -508,7 +508,7 @@
                     </div>
                     <div class="ul-project-txt">
                         <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Women Health & Community Awareness</a></h3>
+                            <h3 class="ul-project-title"><a href="{% url 'projects' %}">Women Health & Community Awareness</a></h3>
                             <p class="ul-project-descr">
                                 Offering free health education, sanitary kits, counseling services, and sensitization programs for women across multiple communities.
                             </p>
@@ -534,7 +534,7 @@
         <h2 class="ul-cta-title">
             Your Contribution Brings Safety, Care & Hope to Families in Need
         </h2>
-        <a href="donations.html" class="ul-btn">
+        <a href="d{% url 'donate' %}" class="ul-btn">
             <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Today & Make an Impact
         </a>
     </div>
@@ -858,7 +858,7 @@ fetch(`https://newsdata.io/api/1/news?apikey=${apiKey}&country=ng&category=busin
             const date = new Date(article.pubDate);
             const day = date.getDate();
             const month = date.toLocaleString('en-NG', { month: 'short' });
-            const defaultImage = 'assets/img/banner-2-slide-1.jpeg'; // Backup image
+            const defaultImage = "{% static 'assets/img/banner-2-slide-1.jpeg' %}"; // Backup image
 
             const html = `
                 <div class="col">
