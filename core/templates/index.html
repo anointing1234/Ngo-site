@@ -1,0 +1,988 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://akajiugofoundation.org/home/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akajiugo Charity Foundation | Women & Children Welfare in Imo State</title>
+    <meta name="description" content="The official website of the Akajiugo Charity Foundation, a social-cultural non-governmental organization in Imo State, Nigeria. We focus on women and children welfare, care support, and community development. Join us in making a difference.">
+    <meta name="keywords" content="Akajiugo Charity Foundation, Imo State NGO, women welfare Nigeria, children welfare Nigeria, social cultural organisation, non-profit Imo State, charity foundation Nigeria, community support NGO">
+    <link rel="stylesheet" href="{% static 'assets/icon/flaticon_charitics.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/splide/splide.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/slim-select/slimselect.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/animate-wow/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}" type="image/png" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ]
+    }
+    </script>
+
+    <!-- NGO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "@id": "https://akajiugofoundation.org/#ngo",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org/",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "image": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "description": "Akajiugo Charity Foundation is a non-governmental organization dedicated to improving the welfare of women and children in Imo State, Nigeria. We provide support, education, health, and community development initiatives.",
+      "telephone": "+2348060784005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Umuna Ancient Palace, Umuna Town",
+        "addressLocality": "Orlu",
+        "addressRegion": "Imo State",
+        "postalCode": "Nigeria",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2348060784005",
+        "contactType": "Customer Service",
+        "areaServed": "NG",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https://akajiugofoundation.org/#website",
+        "url": "https://akajiugofoundation.org/",
+        "name": "Akajiugo Charity Foundation",
+        "publisher": {
+          "@id": "https://akajiugofoundation.org/#ngo"
+        }
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://akajiugofoundation.org/home/#webpage",
+      "url": "https://akajiugofoundation.org/home/",
+      "name": "About Us - Akajiugo Charity Foundation",
+      "isPartOf": {
+        "@id": "https://akajiugofoundation.org/#website"
+      },
+      "about": {
+        "@id": "https://akajiugofoundation.org/#ngo"
+      }
+    }
+    </script>
+
+</head>
+
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="{% url 'home' %} ">
+                    <img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Follow us</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="#"><i class="flaticon-facebook"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="#"><i class="flaticon-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- SEARCH MODAL SECTION START -->
+    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
+        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
+
+        <form action="#" class="ul-search-form">
+            <div class="ul-search-form-right">
+                <input type="search" name="search" id="ul-search" placeholder="Search Here">
+                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
+            </div>
+        </form>
+    </div>
+    <!-- SEARCH MODAL SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header ul-header-2">
+        <div class="ul-header-top">
+            <div class="ul-header-top-wrapper ul-header-container">
+                <div class="ul-header-top-left">
+                <span class="address"><i class="flaticon-pin"></i>Umuna Ancient Palace, Umuna Town, Orlu LGA, Imo State</span>
+                </div>
+                <div class="ul-header-top-right">
+                   <div class="ul-header-top-social">
+                        <span class="title">Contact Us:</span>
+                        <div class="links">
+                            <a href="tel:+2348060784005">+234 806 078 4005</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ul-header-bottom to-be-sticky">
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="{% url 'home' %} " class="d-inline-block"><img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo"></a>
+                </div>
+
+                <!-- header nav -->
+                <div class="ul-header-nav-wrapper">
+                    <div class="to-go-to-sidebar-in-mobile">
+                        <nav class="ul-header-nav">
+                            <div>
+                                <a href="{% url 'home' %}">Home</a>
+                            </div>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                              <div class="has-sub-menu">
+                                <a role="button">Event</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+
+                         
+                          
+
+                            <div >
+                                <a href="#blog" role="button">Blog</a>
+                            </div>
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- actions -->
+                <div class="ul-header-actions">
+                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                    <a href="{% url 'donate' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i>Donate</a>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+    <main>
+
+<section class="ul-banner ul-banner-2">
+    <div class="ul-banner-2-slider swiper">
+        <div class="swiper-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="ul-banner-2-slide">
+                    <img src="{% static 'assets/img/banner-2-slide-1.jpeg' %}" alt="Women and children receiving support" class="ul-banner-2-slide-bg-img">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-md-7">
+                            <div class="ul-banner-txt">
+                                <div class="wow animate__fadeInUp">
+                                    <span class="ul-banner-sub-title ul-section-sub-title">Caring for Women & Children</span>
+                                    <h1 class="ul-banner-title">Promoting Welfare & Support in Imo State</h1>
+                                    <p class="ul-banner-descr">
+                                        Akajiugo Charity Foundation is a <strong>social–cultural non-governmental organisation</strong> devoted to the <strong>welfare, protection, and empowerment of women and children</strong> in communities across Imo State.
+                                    </p>
+                                    <div class="ul-banner-btns">
+                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="ul-banner-2-slide">
+                    <img src="{% static 'assets/img/banner-2-slide-2.jpeg' %}" alt="Community outreach and child care support" class="ul-banner-2-slide-bg-img">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-md-7">
+                            <div class="ul-banner-txt">
+                                <div class="wow animate__fadeInUp">
+                                    <span class="ul-banner-sub-title ul-section-sub-title">Community Support Programs</span>
+                                    <h1 class="ul-banner-title">Improving Lives Through Compassion</h1>
+                                    <p class="ul-banner-descr">
+                                        We provide <strong>child care assistance, maternal support, cultural guidance, and family-focused community outreach</strong> to strengthen homes and protect vulnerable women and children.
+                                    </p>
+                                    <div class="ul-banner-btns">
+                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="ul-banner-2-slide">
+                    <img src="{% static 'assets/img/banner-2-slide-3.jpeg' %}" alt="Women support and cultural care initiatives" class="ul-banner-2-slide-bg-img">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-md-7">
+                            <div class="ul-banner-txt">
+                                <div class="wow animate__fadeInUp">
+                                    <span class="ul-banner-sub-title ul-section-sub-title">Cultural & Social Support</span>
+                                    <h1 class="ul-banner-title">Preserving Values, Supporting Families</h1>
+                                    <p class="ul-banner-descr">
+                                        Through <strong>cultural inclusion programs, family welfare advocacy, and community-driven outreach</strong>, we help create safer environments for children and more secure futures for women.
+                                    </p>
+                                    <div class="ul-banner-btns">
+                                        <a href="donations.html" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ul-banner-2-slider-navigation">
+        <button class="prev"><img src="{% static 'assets/img/left-arrow.svg' %}" alt="arrow"></button>
+        <div class="ul-banner-2-thumb-slider swiper">
+            <div class="swiper-wrapper"></div>
+        </div>
+        <button class="next"><img src="{% static 'assets/img/right-arrow.svg' %}" alt="arrow"></button>
+    </div>
+</section>
+
+
+<!-- FEATURES SECTION START -->
+<section class="ul-features ul-section-spacing">
+    <div class="ul-container">
+        <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4 justify-content-center">
+            
+            <!-- Community Development & Empowerment -->
+            <div class="col">
+                <div class="ul-feature">
+                    <div class="ul-feature-icon">
+                        <!-- Existing SVG -->
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g><path d="M35.2962 9.02488L18.3509 3.04614C18.1239 2.96598 17.8762 2.96598 17.6491 3.04614L0.703829 9.02488C0.282517 9.17352 0.000563343 9.57149 8.42838e-07 10.0183C-0.000561657 10.465 0.280477 10.8636 0.701438 11.0132L17.6468 17.0374C17.761 17.0781 17.8805 17.0984 18 17.0984C18.1195 17.0984 18.239 17.0781 18.3532 17.0374L35.2986 11.0132C35.7195 10.8636 36.0005 10.465 36 10.0183C35.9994 9.57149 35.7175 9.17352 35.2962 9.02488Z" fill="#EB5310"/>
+                            <path d="M33.4668 23.1029V13.9032L31.3574 14.6531V23.1029C30.7221 23.4686 30.2939 24.1538 30.2939 24.9395C30.2939 25.7252 30.7221 26.4105 31.3574 26.7762V31.9593C31.3574 32.5418 31.8296 33.014 32.4121 33.014C32.9946 33.014 33.4668 32.5418 33.4668 31.9593V26.7762C34.1021 26.4106 34.5303 25.7253 34.5303 24.9396C34.5303 24.1538 34.1022 23.4686 33.4668 23.1029Z" fill="#EB5310"/>
+                            <path d="M18 19.2078C17.638 19.2078 17.2814 19.1463 16.9402 19.025L7.41406 15.6384V20.2796C7.41406 21.415 8.59862 22.3753 10.9348 23.1335C12.9711 23.7945 15.4803 24.1585 18 24.1585C20.5197 24.1585 23.0289 23.7945 25.0652 23.1335C27.4014 22.3753 28.586 21.415 28.586 20.2796V15.6384L19.0599 19.025C18.7186 19.1463 18.3621 19.2078 18 19.2078Z" fill="#EB5310"/></g>
+                        </svg>
+                    </div>
+                    <h3 class="ul-feature-title">Community Development & Support</h3>
+                </div>
+            </div>
+
+            <!-- Cultural Preservation & Heritage Promotion -->
+            <div class="col">
+                <div class="ul-feature">
+                    <div class="ul-feature-icon">
+                        <!-- Existing SVG -->
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g><path d="M17.99 4.74549C10.1431 -2.11775 0.165878 3.91249 0.00227293 12.0875C-0.0394192 14.1709 0.561988 16.2003 1.75911 18.0712H9.51849L10.8986 15.7709C11.2994 15.1031 12.2692 15.0816 12.6926 15.7474L15.6046 20.3232L19.8492 11.3624C20.2194 10.5806 21.3226 10.5557 21.7308 11.3139L25.3694 18.0712H34.2209C40.7779 7.82326 27.8191 -3.85132 17.99 4.74549Z" fill="#EB5310"/>
+                            <path d="M23.8108 19.6258L20.8624 14.1502L16.6931 22.952C16.3384 23.7008 15.2951 23.7658 14.8503 23.0667L11.8292 18.3194L11.0197 19.6684C10.8291 19.9861 10.4859 20.1804 10.1154 20.1804H3.42725C3.6369 20.3998 2.51951 19.2847 17.246 33.9348C17.6573 34.3441 18.3222 34.3442 18.7335 33.9348C33.2334 19.5101 32.343 20.3994 32.5523 20.1804H24.7393C24.3513 20.1805 23.9947 19.9674 23.8108 19.6258Z" fill="#EB5310"/></g>
+                        </svg>
+                    </div>
+                    <h3 class="ul-feature-title">Cultural Preservation & Heritage</h3>
+                </div>
+            </div>
+
+            <!-- Educational & Scholarship Support -->
+            <div class="col">
+                <div class="ul-feature">
+                    <div class="ul-feature-icon">
+                        <!-- Existing SVG -->
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2078 7.34403L20.5198 4.10403L20.1598 3.81603C19.2238 2.95203 17.7838 2.95203 16.9198 3.81603L15.6238 5.11203C15.6238 5.18403 16.1278 5.97603 17.2078 7.34403Z" fill="#FC633B"/>
+                            <path d="M15.0479 5.61603L1.58386 19.152C1.36786 19.368 1.22386 19.584 1.15186 19.8L3.45586 19.512H3.88786C4.82386 19.512 5.68786 19.872 6.33586 20.52L15.2639 29.52C15.9839 30.24 16.3439 31.32 16.2719 32.4L15.9839 34.704C16.1999 34.632 16.4159 34.488 16.6319 34.272L30.1679 20.736C29.5199 20.232 28.8719 19.8 28.2239 19.296C22.9679 15.264 18.5759 10.728 15.0479 5.61603Z" fill="#FC633B"/>
+                            <path d="M5.75988 21.024C5.18388 20.448 4.31988 20.16 3.52788 20.232L1.00788 20.592C0.935885 21.168 1.15188 21.744 1.65588 22.248L13.6799 34.272C14.1119 34.704 14.7599 34.92 15.3359 34.92L15.6959 32.4C15.7679 31.536 15.5519 30.744 14.9039 30.168L5.75988 21.024Z" fill="#FC633B"/>
+                        </svg>
+                    </div>
+                    <h3 class="ul-feature-title">Education & Scholarship Assistance</h3>
+                </div>
+            </div>
+
+            <!-- Humanitarian Support & Welfare -->
+            <div class="col">
+                <div class="ul-feature">
+                    <div class="ul-feature-icon">
+                        <!-- Existing SVG -->
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.0999 16.642C35.0999 20.5527 31.9271 23.6886 28.0533 23.6886H8.79504C4.44164 23.6886 0.899902 20.1469 0.899902 15.7935C0.899902 11.2187 4.81058 7.52937 9.45911 7.8983C10.8242 3.91386 14.6611 1.10999 18.9407 1.10999C23.9951 1.10999 28.164 4.79931 28.865 9.66919C32.3698 10.0381 35.0999 13.0265 35.0999 16.642Z" fill="#FC633B"/>
+                            <path d="M8.15492 27.637C10.0519 30.594 10.0519 31.5425 10.0519 31.8493C10.0519 33.5231 8.68495 34.89 7.01117 34.89C5.33739 34.89 3.97046 33.5231 3.97046 31.8493C3.97046 31.5425 3.97046 30.6219 5.86741 27.637C6.09058 27.2464 6.53693 27.0233 6.98326 27.0233C7.45751 27.0233 7.87595 27.2464 8.15492 27.637Z" fill="#FC633B"/>
+                            <path d="M19.1437 27.637C21.0406 30.594 21.0406 31.5425 21.0406 31.8493C21.0406 33.5231 19.6737 34.89 17.9999 34.89C16.3262 34.89 14.9592 33.5231 14.9592 31.8493C14.9592 31.5425 14.9592 30.6219 16.8562 27.637C17.0793 27.2464 17.5257 27.0233 17.972 27.0233C18.4463 27.0233 18.8647 27.2464 19.1437 27.637Z" fill="#FC633B"/>
+                            <path d="M30.1325 27.637C32.0294 30.594 32.0294 31.5425 32.0294 31.8493C32.0294 33.5231 30.6625 34.89 28.9887 34.89C27.3149 34.89 25.948 33.5231 25.948 31.8493C25.948 31.5425 25.948 30.6219 27.8449 27.637C28.0681 27.2464 28.5145 27.0233 28.9608 27.0233C29.435 27.0233 29.8535 27.2464 30.1325 27.637Z" fill="#FC633B"/>
+                        </svg>
+                    </div>
+                    <h3 class="ul-feature-title">Humanitarian Support & Welfare</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- FEATURES SECTION END -->
+
+
+
+
+
+<section class="ul-about ul-about-2 ul-section-spacing wow animate__fadeInUp">
+    <div class="ul-container">
+        <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
+            
+            <div class="col">
+                <div class="ul-about-imgs ul-about-2-img">
+                    <div class="img-wrapper">
+                        <img src="{% static 'assets/img/about-2-img.jpeg' %}" alt="Women and children participating in a community support program">
+                    </div>
+
+                    <div class="ul-about-2-stat">
+                        <span class="number">15+</span>
+                        <span class="txt">Years of Community Service</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-about-txt">
+                    <span class="ul-section-sub-title ul-section-sub-title--2">Who We Are</span>
+                    <h2 class="ul-section-title">Promoting Social and Cultural Support for Women & Children</h2>
+
+                    <p class="ul-section-descr">
+                        The <strong>Akajiugo Charity Foundation</strong> is a social-cultural, non-governmental organization dedicated to supporting, uplifting, and protecting <strong>women and children</strong> through cultural advocacy, welfare programs, emotional care, and community-driven initiatives.  
+                        <br><br>
+                        We work to preserve our cultural values while ensuring vulnerable families receive the <strong>care, support, and protection</strong> they deserve.
+                    </p>
+
+                    <div class="ul-about-bottom ul-about-2-bottom">
+                        
+                        <div class="ul-about-2-bottom-block">
+                            <div class="ul-about-2-bottom-block-icon">
+                                <img src="{% static 'assets/img/mission.svg' %}" alt="Challenge icon">
+                            </div>
+                            <div class="ul-about-2-bottom-block-txt">
+                                <h3 class="ul-about-2-bottom-block-title">Our Mission</h3>
+                                <p class="ul-about-2-bottom-block-descr">
+                                    To provide emotional, cultural, and social support for women and children—ensuring safety, empowerment, and dignity in our communities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ul-about-2-bottom-block">
+                            <div class="ul-about-2-bottom-block-icon">
+                                <img src="{% static 'assets/img/vision.svg' %}" alt="Opportunity icon">
+                            </div>
+                            <div class="ul-about-2-bottom-block-txt">
+                                <h3 class="ul-about-2-bottom-block-title">Our Vision</h3>
+                                <p class="ul-about-2-bottom-block-descr">
+                                    A community where women and children thrive, are protected, and have access to cultural, social, and emotional resources for a better future.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="donate.html" class="ul-btn">
+                        <i class="flaticon-heart-2"></i> Support Our Programs
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ul-projects ul-section-spacing">
+    <div class="ul-container">
+        <div class="ul-section-heading text-center justify-content-center">
+            <div>
+                <span class="ul-section-sub-title">Impacting Women, Children & Communities</span>
+                <h2 class="ul-section-title">Our Completed Community Support & Cultural Preservation Projects</h2>
+            </div>
+        </div>
+
+        <div class="row ul-bs-row justify-content-center">
+
+            <!-- Project 1 -->
+            <div class="col-lg-8 col-md-6 col-10 col-xxs-12">
+                <div class="ul-project">
+                    <div class="ul-project-img">
+                        <img src="{% static 'assets/img/project-1.jpeg' %}" alt="Women receiving food and essential items during outreach">
+                    </div>
+                    <div class="ul-project-txt">
+                        <div>
+                            <h3 class="ul-project-title"><a>Women Welfare & Relief Outreach</a></h3>
+                            <p class="ul-project-descr">
+                                Over 1,000 vulnerable women supported with food supplies, health items, and emotional care during community outreach programs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 col-10 col-xxs-12">
+                <div class="ul-project ul-project--sm">
+                    <div class="ul-project-img">
+                        <img src="{% static 'assets/img/project-2.jpeg' %}" alt="Children engaging in learning activities and receiving care materials">
+                    </div>
+                    <div class="ul-project-txt">
+                        <div>
+                            <h3 class="ul-project-title"><a>Child Care & Educational Support</a></h3>
+                            <p class="ul-project-descr">
+                                Providing school materials, holiday programs, and safe-space activities for children in underserved communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 col-10 col-xxs-12">
+                <div class="ul-project ul-project--sm">
+                    <div class="ul-project-img">
+                        <img src="{% static 'assets/img/project-3.jpeg' %}" alt="Cultural event celebrating traditional heritage">
+                    </div>
+                    <div class="ul-project-txt">
+                        <div>
+                            <h3 class="ul-project-title"><a href="project-details.html">Cultural Heritage Preservation</a></h3>
+                            <p class="ul-project-descr">
+                                Organizing festivals, awareness campaigns, and cultural education programs to preserve our traditions and identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-8 col-md-6 col-10 col-xxs-12">
+                <div class="ul-project">
+                    <div class="ul-project-img">
+                        <img src="{% static 'assets/img/project-4.jpeg' %}" alt="Community women participating in health awareness programs">
+                    </div>
+                    <div class="ul-project-txt">
+                        <div>
+                            <h3 class="ul-project-title"><a href="project-details.html">Women Health & Community Awareness</a></h3>
+                            <p class="ul-project-descr">
+                                Offering free health education, sanitary kits, counseling services, and sensitization programs for women across multiple communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    
+<section class="ul-cta">
+    <div class="ul-container">
+        <span class="ul-section-sub-title">Support Women & Children in Imo State</span>
+        <h2 class="ul-cta-title">
+            Your Contribution Brings Safety, Care & Hope to Families in Need
+        </h2>
+        <a href="donations.html" class="ul-btn">
+            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Today & Make an Impact
+        </a>
+    </div>
+    <img src="{% static 'assets/img/cta-vector.svg' %}" alt="Vector" class="ul-cta-vector">
+</section>
+
+
+
+
+<!-- TESTIMONIAL SECTION START -->
+<section class="ul-testimonial-2 ul-section-spacing">
+    <div class="ul-container wow animate__fadeInUp">
+        <div class="ul-section-heading">
+            <div>
+                <span class="ul-section-sub-title">What Our Community Is Saying</span>
+                <h2 class="ul-section-title">Real Stories of Care, Support & Transformation</h2>
+            </div>
+      </div>
+
+        <div class="row ul-testimonial-2-row gy-4">
+            <!-- Rating card -->
+            <div class="col-md-4">
+                <div class="ul-testimonial-2-overview">
+                    <span class="rating">4.9</span>
+                    <div class="ul-testimonial-2-overview-stars">
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star-1"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="col-md-8">
+                <div class="ul-testimonial-2-slider swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- slide 1: Widow Support Beneficiary -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"After I lost my husband, feeding my children became a daily struggle. The Akajiugo Foundation stepped in like family—providing food support, emotional care, and even helping my children return to school. Their kindness restored my hope in a way words cannot explain."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Mrs. Ngozi M.</h3>
+                                            <span class="reviewer-role">Widow & Mother of Three (Orlu, Imo State)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 2: Community Partner -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"What makes Akajiugo Foundation unique is their personal touch. Every outreach is intentional—whether it is cultural support programs, child welfare initiatives, or women empowerment gatherings. Their work is impacting families across Imo State in practical ways."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Chief Ugochukwu O.</h3>
+                                            <span class="reviewer-role">Community Leader, Umuna Orlu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- slide 3: Mother of Sponsored Child -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"My daughter received school supplies and health support during one of the foundation’s child-care programs. It lifted a huge weight off my shoulders. They truly care about the well-being of children and mothers in our community."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Chidinma O.</h3>
+                                            <span class="reviewer-role">Mother & Program Beneficiary, Imo State</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="ul-testimonial-2-slider-nav">
+                        <button class="prev"><i class="flaticon-back"></i></button>
+                        <button class="next"><i class="flaticon-next"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- TESTIMONIAL SECTION END -->
+
+
+<section class="ul-contact ul-donation-form-section">
+    <div class="ul-container">
+        <div class="row g-0">
+            <div class="col-lg-5">
+                <div class="ul-contact-img">
+                    <img src="{% static 'assets/img/contact-img.jpeg' %}" alt="Women and children receiving care and support during an outreach program in Imo State">
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="ul-contact-form-wrapper">
+                    <span class="ul-section-sub-title">Support Our Mission</span>
+                    <h2 class="ul-section-title">Help Us Care for Women & Children in Imo State</h2>
+
+                    <form id="donationForm" class="ul-contact-form">
+                        {% csrf_token %}
+                        <div class="row row-cols-2 row-cols-xxs-1 ul-bs-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" name="donor_name" id="ul-donor-name" placeholder="Your Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="email" name="donor_email" id="ul-donor-email" placeholder="Email (For Receipt)" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="tel" name="donor_phone" id="ul-donor-phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="number" name="donation_amount" id="ul-donation-amount" placeholder="Donation Amount (NGN)" required min="500">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea name="donor_message" id="ul-donor-msg" placeholder="Optional: Leave a message or reason for your donation"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="ul-btn ul-donation-btn" id="paystackButton">
+                                    <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Securely Now
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="ul-blogs-2 ul-section-spacing">
+    <div id="blog" class="ul-container wow animate__fadeInUp">
+        <div class="ul-section-heading">
+            <div class="left">
+                <span class="ul-section-sub-title"> Nigerian Charity Business Insight </span>
+                <h2 class="ul-section-title">Latest Headlines & Sector News</h2>
+            </div>
+            <a href="news-archive.html" class="ul-btn-link d-none d-md-inline-block">View All Updates <i class="flaticon-next"></i></a>
+        </div>
+
+        <div id="nigerian-news-feed" class="row row-cols-md-3 row-cols-2 row-cols-xxs-1 ul-bs-row justify-content-center">
+            
+            <div class="col news-item-placeholder">
+                <div class="ul-blog ul-blog-2">
+                    <div class="ul-blog-img">
+                        <img src="{% static 'assets/img/blog-placeholder.jpg' %}" alt="News Image" id="news-img-1">
+                        <div class="date" id="news-date-1">
+                            <span class="number">--</span>
+                            <span class="txt">---</span>
+                        </div>
+                    </div>
+                    <div class="ul-blog-txt">
+                        <div class="ul-blog-infos">
+                            <div class="ul-blog-info">
+                                <span class="icon"><i class="flaticon-account"></i></span>
+                                <span class="text font-normal text-[14px] text-etGray" id="news-source-1">Source: Loading...</span>
+                            </div>
+                            <div class="ul-blog-info">
+                                <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                <span class="text font-normal text-[14px] text-etGray" id="news-category-1">Charity/Business</span>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank" class="ul-blog-title" id="news-title-1">Loading Nigerian News Headlines...</a>
+                        <a href="#" target="_blank" class="ul-blog-btn" id="news-btn-1">Read Full Article <span class="icon"><i class="flaticon-next"></i></span></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="ul-footer">
+       
+    <div class="ul-footer-middle">
+        <div class="ul-footer-container">
+            <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                
+                <!-- ABOUT -->
+                <div class="ul-footer-about">
+                    <a href="{% url 'home' %} ">
+                        <img src="{% static 'assets/img/logo_dark.png' %}" alt="Akajiugo Foundation Logo" class="logo">
+                    </a>
+                    <p class="ul-footer-about-txt">
+                        Akajiugo Charity Foundation is a social-cultural non-governmental organisation dedicated to the support, protection, and welfare of **women and children in Imo State**. We promote care, advocacy, cultural heritage, and community wellbeing.
+                    </p>
+                    <div class="ul-footer-socials">
+                        <a href="#"><i class="flaticon-facebook"></i></a>
+                        <a href="#"><i class="flaticon-twitter"></i></a>
+                        <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+                        <a href="#"><i class="flaticon-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="ul-footer-widget">
+                    <h3 class="ul-footer-widget-title">Quick Links</h3>
+
+                    <div class="ul-footer-widget-links">
+                        <a href="{% url 'about_us' %}">About Us</a>
+                        <a href="{% url 'projects' %}">Our Initiatives</a>
+                        <a href="{% url 'donate' %}">Make a Donation</a>
+                        <a href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="ul-footer-widget ul-nwsltr-widget">
+                    <h3 class="ul-footer-widget-title">Connect With Us</h3>
+                    
+                    <div class="ul-footer-widget-links ul-footer-contact-links">
+                        <a href="mailto:info@akajiugofoundation.org">
+                            <i class="flaticon-mail"></i> info@akajiugofoundation.org
+                        </a>
+                        <a href="tel:+2348060784005">
+                            <i class="flaticon-telephone-call"></i> +234 806 078 4005
+                        </a>
+                        <p class="mt-2 text-[14px] text-etGray">Umuna Town, Orlu LGA, Imo State, Nigeria</p>
+                    </div>
+                    
+                    <form action="#" class="ul-nwsltr-form">
+                        <div class="top">
+                            <input type="email" name="email" id="nwsltr-email" placeholder="Receive Updates via Email" class="ul-nwsltr-input" required>
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="flaticon-next"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="ul-footer-bottom">
+        <div class="ul-footer-container">
+            <div class="ul-footer-bottom-wrapper">
+                <p class="copyright-txt">
+                    &copy; <span id="footer-copyright-year">2025</span>
+                    <strong>Akajiugo Charity Foundation</strong>. All rights reserved.
+                </p>
+                <div class="ul-footer-bottom-nav">
+                    <a href="#">Terms & Conditions</a> 
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VECTORS -->
+    <div class="ul-footer-vectors">
+        <img src="{% static 'assets/img/footer-vector-img.png' %}" alt="Footer decorative image" class="ul-footer-vector-1">
+    </div>
+</footer>
+
+
+
+    <!-- libraries JS -->
+<script src="{% static 'assets/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/splide/splide.min.js' %}"></script>
+<script src="{% static 'assets/vendor/splide/splide-extension-auto-scroll.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/slim-select/slimselect.min.js' %}"></script>
+<script src="{% static 'assets/vendor/animate-wow/wow.min.js' %}"></script>
+<script src="{% static 'assets/vendor/splittype/index.min.js' %}"></script>
+<script src="{% static 'assets/vendor/mixitup/mixitup.min.js' %}"></script>
+<script src="{% static 'assets/vendor/fslightbox/fslightbox.js' %}"></script>
+<script src="{% static 'assets/vendor/flatpickr/flatpickr.js' %}"></script>
+
+<!-- custom JS -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+<script src="{% static 'assets/js/tab.js' %}"></script>
+<!-- <script src="{% static 'assets/js/countdown.js' %}"></script> -->
+<script src="{% static 'assets/js/accordion.js' %}"></script>
+<script src="{% static 'assets/js/progressbar.js' %}"></script>
+<script src="{% static 'assets/js/donate-form.js' %}"></script>
+
+
+    <script>
+        // --- Conceptual JavaScript for NewsData.io (Replace with your chosen API details) ---
+const apiKey = 'pub_6378106b17a9beec0c07a03c915df45a20986'; // Replace with your actual key
+const newsContainer = document.getElementById('nigerian-news-feed');
+
+// Clears placeholder content and fetches real news
+newsContainer.innerHTML = ''; 
+
+fetch(`https://newsdata.io/api/1/news?apikey=${apiKey}&country=ng&category=business,politics&language=en&size=3`)
+    .then(response => response.json())
+    .then(data => {
+        data.results.forEach(article => {
+            const date = new Date(article.pubDate);
+            const day = date.getDate();
+            const month = date.toLocaleString('en-NG', { month: 'short' });
+            const defaultImage = 'assets/img/banner-2-slide-1.jpeg'; // Backup image
+
+            const html = `
+                <div class="col">
+                    <div class="ul-blog ul-blog-2">
+                        <div class="ul-blog-img">
+                            <img src="${article.image_url || defaultImage}" alt="${article.title}" onerror="this.src='${defaultImage}'">
+                            <div class="date">
+                                <span class="number">${day}</span>
+                                <span class="txt">${month}</span>
+                            </div>
+                        </div>
+                        <div class="ul-blog-txt">
+                            <div class="ul-blog-infos">
+                                <div class="ul-blog-info">
+                                    <span class="icon"><i class="flaticon-account"></i></span>
+                                    <span class="text font-normal text-[14px] text-etGray">${article.source_name || 'Admin'}</span>
+                                </div>
+                                <div class="ul-blog-info">
+                                    <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                    <span class="text font-normal text-[14px] text-etGray">${article.category.join(', ')}</span>
+                                </div>
+                            </div>
+                            <a href="${article.link}" target="_blank" class="ul-blog-title">${article.title}</a>
+                            <a href="${article.link}" target="_blank" class="ul-blog-btn">Read More <span class="icon"><i class="flaticon-next"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            newsContainer.insertAdjacentHTML('beforeend', html);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching news:', error);
+        // Fallback to static content if API fails
+        newsContainer.innerHTML = `
+            <p>Could not load live news. Please check back later or view our <a href="news-archive.html">archive</a>.</p>
+        `;
+    });
+    </script>
+
+    
+    <!-- Include SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Paystack Inline JS -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+
+<script>
+document.getElementById('paystackButton').addEventListener('click', function() {
+    let donorName = document.getElementById('ul-donor-name').value;
+    let donorEmail = document.getElementById('ul-donor-email').value;
+    let donorPhone = document.getElementById('ul-donor-phone').value;
+    let donationAmount = document.getElementById('ul-donation-amount').value;
+    let donorMessage = document.getElementById('ul-donor-msg').value;
+
+    if (!donorName || !donorEmail || !donationAmount) {
+        Swal.fire('Error', 'Please fill all required fields', 'error');
+        return;
+    }
+
+    let handler = PaystackPop.setup({
+        key: "{{ PAYSTACK_PUBLIC_KEY }}", // Replace with your Django context variable or env
+        email: donorEmail,
+        amount: donationAmount * 100, // in kobo
+        currency: "NGN",
+        ref: 'DON-' + Math.floor((Math.random() * 1000000000) + 1),
+        metadata: {
+            custom_fields: [
+                { display_name: "Name", variable_name: "donor_name", value: donorName },
+                { display_name: "Phone", variable_name: "donor_phone", value: donorPhone },
+                { display_name: "Message", variable_name: "donor_message", value: donorMessage }
+            ]
+        },
+        callback: function(response){
+            // Payment successful
+            Swal.fire({
+                title: "Donation Successful",
+                html: `
+                    <p style="font-size:16px; margin-top:10px;">
+                        Thank you for your generous donation. <br>
+                        Your support helps us continue our mission and reach more lives.
+                    </p>
+                    <p style="margin-top:10px; font-size:14px; color:#555;">
+                        A confirmation email has been sent to you.
+                    </p>
+                `,
+                icon: "success",
+                confirmButtonText: "Close",
+            });
+            // Send donor info to backend
+            fetch("{% url 'process_donation' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: JSON.stringify({
+                    donor_name: donorName,
+                    donor_email: donorEmail,
+                    donor_phone: donorPhone,
+                    donation_amount: donationAmount,
+                    donor_message: donorMessage,
+                    paystack_reference: response.reference
+                })
+            }).then(res => res.json())
+              .then(data => console.log(data))
+              .catch(err => console.error(err));
+        },
+        onClose: function(){
+            Swal.fire('Info', 'Payment window closed', 'info');
+        }
+    });
+    handler.openIframe();
+});
+</script>
+
+
+</body>
+
+</html>

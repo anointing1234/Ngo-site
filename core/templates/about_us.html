@@ -1,0 +1,836 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://akajiugofoundation.org/about_us/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akajiugo Charity Foundation | Women & Children Welfare in Imo State</title>
+    <meta name="description" content="The official website of the Akajiugo Charity Foundation, a social-cultural non-governmental organization in Imo State, Nigeria. We focus on women and children welfare, care support, and community development. Join us in making a difference.">
+    <meta name="keywords" content="Akajiugo Charity Foundation, Imo State NGO, women welfare Nigeria, children welfare Nigeria, social cultural organisation, non-profit Imo State, charity foundation Nigeria, community support NGO">
+    <link rel="stylesheet" href="{% static 'assets/icon/flaticon_charitics.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/splide/splide.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/slim-select/slimselect.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/animate-wow/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}" type="image/png" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ]
+    }
+    </script>
+
+    <!-- NGO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "@id": "https://akajiugofoundation.org/#ngo",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org/",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "image": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "description": "Akajiugo Charity Foundation is a non-governmental organization dedicated to improving the welfare of women and children in Imo State, Nigeria. We provide support, education, health, and community development initiatives.",
+      "telephone": "+2348060784005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Umuna Ancient Palace, Umuna Town",
+        "addressLocality": "Orlu",
+        "addressRegion": "Imo State",
+        "postalCode": "Nigeria",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2348060784005",
+        "contactType": "Customer Service",
+        "areaServed": "NG",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https://akajiugofoundation.org/#website",
+        "url": "https://akajiugofoundation.org/",
+        "name": "Akajiugo Charity Foundation",
+        "publisher": {
+          "@id": "https://akajiugofoundation.org/#ngo"
+        }
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://akajiugofoundation.org/about_us/#webpage",
+      "url": "https://akajiugofoundation.org/about_us/",
+      "name": "About Us - Akajiugo Charity Foundation",
+      "isPartOf": {
+        "@id": "https://akajiugofoundation.org/#website"
+      },
+      "about": {
+        "@id": "https://akajiugofoundation.org/#ngo"
+      }
+    }
+    </script>
+
+
+</head>
+
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="{% url 'home' %} ">
+                    <img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Follow us</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="#"><i class="flaticon-facebook"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="#"><i class="flaticon-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- SEARCH MODAL SECTION START -->
+    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
+        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
+
+        <form action="#" class="ul-search-form">
+            <div class="ul-search-form-right">
+                <input type="search" name="search" id="ul-search" placeholder="Search Here">
+                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
+            </div>
+        </form>
+    </div>
+    <!-- SEARCH MODAL SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header ul-header-2">
+        <div class="ul-header-top">
+            <div class="ul-header-top-wrapper ul-header-container">
+                <div class="ul-header-top-left">
+                <span class="address"><i class="flaticon-pin"></i>Umuna Ancient Palace, Umuna Town, Orlu LGA, Imo State</span>
+                </div>
+                <div class="ul-header-top-right">
+                   <div class="ul-header-top-social">
+                        <span class="title">Contact Us:</span>
+                        <div class="links">
+                            <a href="tel:+2348060784005">+234 806 078 4005</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ul-header-bottom to-be-sticky">
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="{% url 'home' %} " class="d-inline-block"><img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo"></a>
+                </div>
+
+                <!-- header nav -->
+                <div class="ul-header-nav-wrapper">
+                    <div class="to-go-to-sidebar-in-mobile">
+                        <nav class="ul-header-nav">
+                            <div>
+                                <a href="{% url 'home' %}">Home</a>
+                            </div>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                              <div class="has-sub-menu">
+                                <a role="button">Event</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+
+                         
+                          
+
+                            <div >
+                                <a href="{% url 'home' %}#blog" role="button">Blog</a>
+                            </div>
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- actions -->
+                <div class="ul-header-actions">
+                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                    <a href="{% url 'donate' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i>Donate</a>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+    <main>
+
+    <main>
+        <!-- BREADCRUMBS SECTION START -->
+        <section class="ul-breadcrumb ul-section-spacing">
+            <div class="ul-container">
+                <h2 class="ul-breadcrumb-title">About Us</h2>
+                <ul class="ul-breadcrumb-nav">
+                    <li><a href="{% url 'home' %} ">Home</a></li>
+                    <li><span class="separator"><i class="flaticon-right"></i></span></li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </section>
+        <!-- BREADCRUMBS SECTION END -->
+
+
+        <section class="ul-about ul-section-spacing wow animate__fadeInUp">
+    <div class="ul-container">
+        <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
+            
+            <div class="col">
+                <div class="ul-about-imgs">
+                    <div class="img-wrapper">
+                        <img src="{% static 'assets/img/about-img.jpeg' %}" alt="Akajiugo Foundation supporting women and children in Imo State">
+                    </div>
+                    <div class="ul-about-imgs-vectors">
+                        <img src="{% static 'assets/img/about-img-vector-1.svg' %}" alt="Decorative vector" class="vector-1">
+                        <img src="{% static 'assets/img/about-img-vector-2.svg' %}" alt="Decorative vector" class="vector-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-about-txt">
+                    <span class="ul-section-sub-title ul-section-sub-title--2">Who We Are & What We Do</span>
+                    <h2 class="ul-section-title">Caring for Women and Children Across Imo State</h2>
+
+                    <p class="ul-section-descr">
+                        The <strong>Akajiugo Charity Foundation</strong> is a social-cultural, non-governmental organization dedicated to improving the lives of women and children in Imo State. Our mission focuses on providing support, protection, welfare assistance, and community development initiatives that uplift vulnerable families and strengthen cultural values.
+                    </p>
+
+                    <div class="ul-about-block">
+                        <div class="block-left">
+                            <div class="block-heading">
+                                <div class="icon"><i class="flaticon-love"></i></div>
+                                <h3 class="block-title">What We Stand For</h3>
+                            </div>
+
+                            <ul class="block-list">
+                                <li>Providing welfare assistance to widows, single mothers, and less-privileged women.</li>
+                                <li>Supporting children’s education, health, and basic needs within underserved communities.</li>
+                                <li>Organizing cultural, moral, and community programs that promote unity and empowerment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ul-about-bottom">
+                        <div class="ul-about-call">
+                            <div class="icon"><i class="flaticon-telephone-call"></i></div>
+                            <div class="txt">
+                                <span class="call-title">Partner With Us to Touch More Lives</span>
+                                <a href="tel:+2348060784005">+234 806 078 4005</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+       
+<div class="ul-stats ul-section-spacing">
+    <div class="ul-container">
+        <div class="ul-stats-wrapper wow animate__fadeInUp">
+            <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 row-cols-xxs-1 ul-bs-row justify-content-center">
+                
+                <div class="col">
+                    <div class="ul-stats-item">
+                        <i class="flaticon-costumer"></i>
+                        <span class="number">850+</span>
+                        <span class="txt">Women Supported & Assisted</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="ul-stats-item">
+                        <i class="flaticon-team"></i>
+                        <span class="number">430+</span>
+                        <span class="txt">Children Cared For & Impacted</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="ul-stats-item">
+                        <i class="flaticon-package"></i>
+                        <span class="number">120+</span>
+                        <span class="txt">Widows Empowered with Support Programs</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="ul-stats-item">
+                        <i class="flaticon-relationship"></i>
+                        <span class="number">60+</span>
+                        <span class="txt">Community & Cultural Outreach Projects</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="ul-about-tabs ul-events ul-section-spacing pt-0">
+    <div class="ul-container">
+        <div class="ul-section-heading align-items-center wow animate__fadeInUp">
+            <div class="left">
+                <span class="ul-section-sub-title">Our Organization Core Values</span>
+                <h2 class="ul-section-title text-white">The Foundation's Mission, Vision & Journey</h2>
+            </div>
+            <a href="donate.html" class="ul-btn"><i class="flaticon-heart-2"></i> Get Involved</a>
+        </div>
+
+        <div class="tab-group">
+            <div class="ul-about-tabs-wrapper">
+                
+                <!-- MISSION -->
+                <div id="tab-mission" class="ul-tab ul-about-tab active">
+                    <div class="ul-about-tab-img">
+                        <img src="{% static 'assets/img/mission-img.jpeg' %}" alt="Women and children support mission Imo State">
+                    </div>
+
+                    <div class="ul-about-tab-txt">
+                        <h3 class="ul-about-tab-title">Our Mission: Supporting Women & Protecting Children</h3>
+                        <p class="ul-about-tab-descr">
+                            The **Akajiugo Charity Foundation** is committed to providing compassionate support and intervention for **women, widows, vulnerable children, and underserved families** across Imo State.  
+                            Our mission is to uplift communities through **caregiving programs, social-cultural development, child welfare initiatives, emotional support, empowerment aid, and sustainable community outreach**.
+                        </p>
+                        <ul class="ul-about-tab-list">
+                            <li>Providing food, health assistance, and relief packages for widows and single mothers.</li>
+                            <li>Ensuring child safety, education support, and welfare for vulnerable and at-risk children.</li>
+                            <li>Preserving cultural identity through community engagement and social-cultural activities.</li>
+                            <li>Offering emotional support, counseling, and care to women facing difficult circumstances.</li>
+                            <li>Promoting community unity and welfare through consistent outreach programs.</li>
+                        </ul>
+                        <p class="ul-about-tab-descr">
+                            We exist to restore dignity, strengthen families, and give women and children the opportunity to thrive regardless of their situation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- VISION -->
+                <div id="tab-vision" class="ul-tab ul-about-tab">
+                    <div class="ul-about-tab-img">
+                        <img src="{% static 'assets/img/why-join.jpeg' %}" alt="Vision for women and children Imo State">
+                    </div>
+
+                    <div class="ul-about-tab-txt">
+                        <h3 class="ul-about-tab-title">Our Vision: A Safe & Supportive Future for Every Woman & Child</h3>
+                        <p class="ul-about-tab-descr">
+                            Our vision is a society where **no woman is left without support** and **no child is left unprotected**.  
+                            We aim to become one of the leading humanitarian foundations in Imo State—recognized for advocacy, care, cultural preservation, and life-changing outreach.
+                        </p>
+                        <ul class="ul-about-tab-list">
+                            <li>A future where widows and single mothers receive consistent care and dignity.</li>
+                            <li>A community where every child has access to food, education, and emotional support.</li>
+                            <li>Strengthening family structures through cultural and social programs.</li>
+                            <li>Expanding outreach to rural areas across all LGAs in Imo State.</li>
+                            <li>Building sustainable partnerships for long-term humanitarian impact.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HISTORY -->
+                <div id="tab-history" class="ul-tab ul-about-tab">
+                    <div class="ul-about-tab-img">
+                        <img src="{% static 'assets/img/history-img.jpeg' %}" alt="History of Akajiugo Charity Foundation Imo State">
+                    </div>
+
+                    <div class="ul-about-tab-txt">
+                        <h3 class="ul-about-tab-title">Our History: Built on Compassion & Community</h3>
+                        <p class="ul-about-tab-descr">
+                            The **Akajiugo Charity Foundation** was founded in **Imo State** as a response to the growing needs of disadvantaged women, widows, and vulnerable children in local communities.
+                        </p>
+
+                        <p class="ul-about-tab-descr">
+                            What started as small neighborhood outreach—offering food, emotional support, and cultural assistance—has grown into a structured organization providing organized community care, child welfare activities, and women support initiatives.
+                        </p>
+
+                        <p class="ul-about-tab-descr">
+                            Today, the foundation continues to expand, touching lives across Imo State with a deep commitment to compassion, dignity, and community upliftment.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-navs ul-about-tabs-nav">
+                <button class="tab-nav active" data-tab="tab-mission"> Our Mission </button>
+                <button class="tab-nav" data-tab="tab-vision">Our Vision</button>
+                <button class="tab-nav" data-tab="tab-history">Our History</button>
+            </div>
+        </div>
+
+        <div class="ul-events-vectors">
+            <img src="{% static 'assets/img/events-vector-2.svg' %}" alt="Events Image" class="vector-2">
+        </div>
+    </div>
+</section>
+
+
+<section class="ul-team ul-section-spacing">
+    <div class="ul-container">
+        <div class="ul-section-heading justify-content-between">
+            <div class="left">
+                <span class="ul-section-sub-title">Our Volunteers, Caregivers & Coordinators</span>
+                <h2 class="ul-section-title">The Compassionate Team Supporting Women and Children in Imo State</h2>
+            </div>
+            <div>
+                <a href="volunteer.html" class="ul-btn"><i class="flaticon-team"></i> Become a Volunteer</a>
+            </div>
+        </div>
+
+        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 row-cols-xxs-1 ul-team-row justify-content-center">
+            
+            <div class="col">
+                <div class="ul-team-member">
+                    <div class="ul-team-member-img">
+                        <img src="{% static 'assets/img/member-1.jpeg' %}" alt="Team Member Image">
+                        <div class="ul-team-member-socials"></div>
+                    </div>
+                    <div class="ul-team-member-info">
+                        <h3 class="ul-team-member-name"><a href="team-details.html">John Doe</a></h3>
+                        <p class="ul-team-member-designation">Executive Director</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-team-member">
+                    <div class="ul-team-member-img">
+                        <img src="{% static 'assets/img/member-2.jpeg' %}" alt="Team Member Image">
+                        <div class="ul-team-member-socials"></div>
+                    </div>
+                    <div class="ul-team-member-info">
+                        <h3 class="ul-team-member-name"><a href="team-details.html">Jane Smith</a></h3>
+                        <p class="ul-team-member-designation">Women Support Program Lead</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-team-member">
+                    <div class="ul-team-member-img">
+                        <img src="{% static 'assets/img/member-3.jpeg' %}" alt="Team Member Image">
+                        <div class="ul-team-member-socials"></div>
+                    </div>
+                    <div class="ul-team-member-info">
+                        <h3 class="ul-team-member-name"><a href="team-details.html">Obinna Okoro</a></h3>
+                        <p class="ul-team-member-designation">Child Welfare Coordinator</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-team-member">
+                    <div class="ul-team-member-img">
+                        <img src="{% static 'assets/img/member-4.jpeg' %}" alt="Team Member Image">
+                        <div class="ul-team-member-socials"></div>
+                    </div>
+                    <div class="ul-team-member-info">
+                        <h3 class="ul-team-member-name"><a href="team-details.html">Aisha Bello</a></h3>
+                        <p class="ul-team-member-designation">Community Outreach Supervisor</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="ul-difference ul-section-spacing mb-5">
+    <div class="ul-container">
+
+        <div class="ul-section-heading text-center wow animate__fadeInUp">
+            <span class="ul-section-sub-title">Help is Our Goal</span>
+            <h2 class="ul-section-title">What Makes Us Different</h2>
+            <p class="ul-section-descr">
+                At Akajiugo Charity Foundation, we are committed to supporting women and children through 
+                compassion-driven programs, transparent practices, and community-focused initiatives that 
+                truly make a lasting impact.
+            </p>
+        </div>
+
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 gy-4 ul-difference-row wow animate__fadeInUp">
+
+            <div class="col">
+                <div class="ul-diff-item">
+                    <div class="icon"><i class="flaticon-love"></i></div>
+                    <h3 class="title">Compassion-Centered Support</h3>
+                    <p>
+                        Every program is built around empathy and understanding, ensuring women and children 
+                        receive emotional, physical, and social support when they need it most.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-diff-item">
+                    <div class="icon"><i class="flaticon-handshake"></i></div>
+                    <h3 class="title">Community-Driven Impact</h3>
+                    <p>
+                        We work directly within local communities in Imo State, tailoring our outreach and 
+                        assistance to real needs identified by the people we serve.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ul-diff-item">
+                    <div class="icon"><i class="flaticon-charity"></i></div>
+                    <h3 class="title">Transparent & Accountable</h3>
+                    <p>
+                        We maintain an open, honest system that ensures every donation goes directly toward 
+                        supporting vulnerable women and children through verified programs.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="ul-about ul-section-spacing wow animate__fadeInUp">
+    <div class="ul-container">
+        <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
+
+            <!-- Image Column -->
+            <div class="col">
+                <div class="ul-about-imgs">
+                    <div class="img-wrapper">
+                        <img src="{% static 'assets/img/why_we_exist.jpeg' %}" alt="Akajiugo Foundation supporting women and children in Imo State">
+                    </div>
+                    <div class="ul-about-imgs-vectors">
+                        <img src="{% static 'assets/img/about-img-vector-1.svg' %}" alt="Decorative vector" class="vector-1">
+                        <img src="{% static 'assets/img/about-img-vector-2.svg' %}" alt="Decorative vector" class="vector-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Column -->
+            <div class="col">
+                <div class="ul-about-txt">
+                    
+                    <span class="ul-section-sub-title ul-section-sub-title--2">Why We Exist</span>
+                    <h2 class="ul-section-title">Supporting and Uplifting Women & Children in Imo State</h2>
+
+                    <p class="ul-section-descr">
+                        The <strong>Akajiugo Charity Foundation</strong> exists to provide care, protection, and sustainable support to women and children facing hardship across Imo State. As a social-cultural, non-governmental organization, we are committed to strengthening families, preserving cultural values, and ensuring vulnerable individuals live with dignity, stability, and hope.
+                    </p>
+
+                    <div class="ul-about-block">
+                        <div class="block-left">
+                            
+                            <div class="block-heading">
+                                <div class="icon"><i class="flaticon-love"></i></div>
+                                <h3 class="block-title">What Drives Our Mission</h3>
+                            </div>
+
+                            <ul class="block-list">
+                                <li>Providing welfare support to widows, single mothers, and vulnerable women.</li>
+                                <li>Ensuring children have access to education, healthcare, nutrition, and essential needs.</li>
+                                <li>Promoting community unity, cultural preservation, and moral development through social programs.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="ul-cta">
+    <div class="ul-container">
+        <span class="ul-section-sub-title">Support Women & Children in Imo State</span>
+        <h2 class="ul-cta-title">Your Donation Can Provide Safety, Care & Opportunity to Vulnerable Families</h2>
+        <a href="donations.html" class="ul-btn">
+            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate & Make an Impact
+        </a>
+    </div>
+    <img src="{% static 'assets/img/cta-vector.svg' %}" alt="Vector" class="ul-cta-vector">
+</section>
+
+
+
+<!-- TESTIMONIAL SECTION START -->
+<section class="ul-testimonial-2 ul-section-spacing">
+    <div class="ul-container wow animate__fadeInUp">
+        <div class="ul-section-heading">
+            <div>
+                <span class="ul-section-sub-title">What Our Community Is Saying</span>
+                <h2 class="ul-section-title">Real Stories of Care, Support & Transformation</h2>
+            </div>
+      </div>
+
+        <div class="row ul-testimonial-2-row gy-4">
+            <!-- Rating card -->
+            <div class="col-md-4">
+                <div class="ul-testimonial-2-overview">
+                    <span class="rating">4.9</span>
+                    <div class="ul-testimonial-2-overview-stars">
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star"></i>
+                        <i class="flaticon-star-1"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="col-md-8">
+                <div class="ul-testimonial-2-slider swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- slide 1: Widow Support Beneficiary -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"After I lost my husband, feeding my children became a daily struggle. The Akajiugo Foundation stepped in like family—providing food support, emotional care, and even helping my children return to school. Their kindness restored my hope in a way words cannot explain."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Mrs. Ngozi M.</h3>
+                                            <span class="reviewer-role">Widow & Mother of Three (Orlu, Imo State)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 2: Community Partner -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"What makes Akajiugo Foundation unique is their personal touch. Every outreach is intentional—whether it is cultural support programs, child welfare initiatives, or women empowerment gatherings. Their work is impacting families across Imo State in practical ways."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Chief Ugochukwu O.</h3>
+                                            <span class="reviewer-role">Community Leader, Umuna Orlu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- slide 3: Mother of Sponsored Child -->
+                        <div class="swiper-slide">
+                            <div class="ul-review ul-review-2">
+                                <span class="icon"><i class="flaticon-quote-1"></i></span>
+                                <p class="ul-review-descr">"My daughter received school supplies and health support during one of the foundation’s child-care programs. It lifted a huge weight off my shoulders. They truly care about the well-being of children and mothers in our community."</p>
+                                <div class="ul-review-bottom">
+                                    <div class="ul-review-reviewer">
+                                        <div>
+                                            <h3 class="reviewer-name">Chidinma O.</h3>
+                                            <span class="reviewer-role">Mother & Program Beneficiary, Imo State</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="ul-testimonial-2-slider-nav">
+                        <button class="prev"><i class="flaticon-back"></i></button>
+                        <button class="next"><i class="flaticon-next"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- TESTIMONIAL SECTION END -->
+
+       
+    </main>
+
+
+    
+    <footer class="ul-footer">
+       
+    <div class="ul-footer-middle">
+        <div class="ul-footer-container">
+            <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                
+                <!-- ABOUT -->
+                <div class="ul-footer-about">
+                    <a href="{% url 'home' %} ">
+                        <img src="{% static 'assets/img/logo_dark.png' %}" alt="Akajiugo Foundation Logo" class="logo">
+                    </a>
+                    <p class="ul-footer-about-txt">
+                        Akajiugo Charity Foundation is a social-cultural non-governmental organisation dedicated to the support, protection, and welfare of **women and children in Imo State**. We promote care, advocacy, cultural heritage, and community wellbeing.
+                    </p>
+                    <div class="ul-footer-socials">
+                        <a href="#"><i class="flaticon-facebook"></i></a>
+                        <a href="#"><i class="flaticon-twitter"></i></a>
+                        <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+                        <a href="#"><i class="flaticon-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="ul-footer-widget">
+                    <h3 class="ul-footer-widget-title">Quick Links</h3>
+
+                    <div class="ul-footer-widget-links">
+                        <a href="{% url 'about_us' %}">About Us</a>
+                        <a href="{% url 'projects' %}">Our Initiatives</a>
+                        <a href="{% url 'donate' %}">Make a Donation</a>
+                        <a href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="ul-footer-widget ul-nwsltr-widget">
+                    <h3 class="ul-footer-widget-title">Connect With Us</h3>
+                    
+                    <div class="ul-footer-widget-links ul-footer-contact-links">
+                        <a href="mailto:info@akajiugofoundation.org">
+                            <i class="flaticon-mail"></i> info@akajiugofoundation.org
+                        </a>
+                        <a href="tel:+2348060784005">
+                            <i class="flaticon-telephone-call"></i> +234 806 078 4005
+                        </a>
+                        <p class="mt-2 text-[14px] text-etGray">Umuna Town, Orlu LGA, Imo State, Nigeria</p>
+                    </div>
+                    
+                    <form action="#" class="ul-nwsltr-form">
+                        <div class="top">
+                            <input type="email" name="email" id="nwsltr-email" placeholder="Receive Updates via Email" class="ul-nwsltr-input" required>
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="flaticon-next"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="ul-footer-bottom">
+        <div class="ul-footer-container">
+            <div class="ul-footer-bottom-wrapper">
+                <p class="copyright-txt">
+                    &copy; <span id="footer-copyright-year">2025</span>
+                    <strong>Akajiugo Charity Foundation</strong>. All rights reserved.
+                </p>
+                <div class="ul-footer-bottom-nav">
+                    <a href="#">Terms & Conditions</a> 
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VECTORS -->
+    <div class="ul-footer-vectors">
+        <img src="{% static 'assets/img/footer-vector-img.png' %}" alt="Footer decorative image" class="ul-footer-vector-1">
+    </div>
+</footer>
+
+
+    <!-- libraries JS -->
+    <script src="{% static 'assets/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splide/splide.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splide/splide-extension-auto-scroll.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/slim-select/slimselect.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/animate-wow/wow.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splittype/index.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/mixitup/mixitup.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/fslightbox/fslightbox.js' %}"></script>
+    <script src="{% static 'assets/vendor/flatpickr/flatpickr.js' %}"></script>
+
+    <!-- custom JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/tab.js' %}"></script>
+    <!-- <script src="assets/js/countdown.js' %}"></script> -->
+    <script src="{% static 'assets/js/accordion.js' %}"></script>
+    <script src="{% static 'assets/js/progressbar.js' %}"></script>
+</body>
+
+</html>

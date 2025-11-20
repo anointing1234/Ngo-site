@@ -1,0 +1,487 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://akajiugofoundation.org/contact/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akajiugo Charity Foundation | Women & Children Welfare in Imo State</title>
+    <meta name="description" content="The official website of the Akajiugo Charity Foundation, a social-cultural non-governmental organization in Imo State, Nigeria. We focus on women and children welfare, care support, and community development. Join us in making a difference.">
+    <meta name="keywords" content="Akajiugo Charity Foundation, Imo State NGO, women welfare Nigeria, children welfare Nigeria, social cultural organisation, non-profit Imo State, charity foundation Nigeria, community support NGO">
+    <link rel="stylesheet" href="{% static 'assets/icon/flaticon_charitics.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/splide/splide.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/slim-select/slimselect.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/animate-wow/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}" type="image/png" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ]
+    }
+    </script>
+
+    <!-- NGO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "@id": "https://akajiugofoundation.org/#ngo",
+      "name": "Akajiugo Charity Foundation",
+      "url": "https://akajiugofoundation.org/",
+      "logo": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "image": "https://akajiugofoundation.org/static/assets/img/logo_dark.png",
+      "description": "Akajiugo Charity Foundation is a non-governmental organization dedicated to improving the welfare of women and children in Imo State, Nigeria. We provide support, education, health, and community development initiatives.",
+      "telephone": "+2348060784005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Umuna Ancient Palace, Umuna Town",
+        "addressLocality": "Orlu",
+        "addressRegion": "Imo State",
+        "postalCode": "Nigeria",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2348060784005",
+        "contactType": "Customer Service",
+        "areaServed": "NG",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://facebook.com/akajiugofoundation",
+        "https://twitter.com/akajiugofoundation",
+        "https://instagram.com/akajiugofoundation",
+        "https://youtube.com/@akajiugofoundation"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https://akajiugofoundation.org/#website",
+        "url": "https://akajiugofoundation.org/",
+        "name": "Akajiugo Charity Foundation",
+        "publisher": {
+          "@id": "https://akajiugofoundation.org/#ngo"
+        }
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://akajiugofoundation.org/contact/#webpage",
+      "url": "https://akajiugofoundation.org/contact/",
+      "name": "About Us - Akajiugo Charity Foundation",
+      "isPartOf": {
+        "@id": "https://akajiugofoundation.org/#website"
+      },
+      "about": {
+        "@id": "https://akajiugofoundation.org/#ngo"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="{% url 'home' %} ">
+                    <img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Follow us</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="#"><i class="flaticon-facebook"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="#"><i class="flaticon-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- SEARCH MODAL SECTION START -->
+    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
+        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
+
+        <form action="#" class="ul-search-form">
+            <div class="ul-search-form-right">
+                <input type="search" name="search" id="ul-search" placeholder="Search Here">
+                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
+            </div>
+        </form>
+    </div>
+    <!-- SEARCH MODAL SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header ul-header-2">
+        <div class="ul-header-top">
+            <div class="ul-header-top-wrapper ul-header-container">
+                <div class="ul-header-top-left">
+                <span class="address"><i class="flaticon-pin"></i>Umuna Ancient Palace, Umuna Town, Orlu LGA, Imo State</span>
+                </div>
+                <div class="ul-header-top-right">
+                   <div class="ul-header-top-social">
+                        <span class="title">Contact Us:</span>
+                        <div class="links">
+                            <a href="tel:+2348060784005">+234 806 078 4005</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ul-header-bottom to-be-sticky">
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="{% url 'home' %} " class="d-inline-block"><img src="{% static 'assets/img/logo_white.png' %}" alt="logo" class="logo"></a>
+                </div>
+
+                <!-- header nav -->
+                <div class="ul-header-nav-wrapper">
+                    <div class="to-go-to-sidebar-in-mobile">
+                        <nav class="ul-header-nav">
+                            <div>
+                                <a href="{% url 'home' %}">Home</a>
+                            </div>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                              <div class="has-sub-menu">
+                                <a role="button">Event</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+
+                         
+                          
+
+                            <div >
+                                <a href="{% url 'home' %}#blog" role="button">Blog</a>
+                            </div>
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- actions -->
+                <div class="ul-header-actions">
+                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                    <a href="{% url 'donate' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i>Donate</a>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMBS SECTION START -->
+        <section class="ul-breadcrumb ul-section-spacing">
+            <div class="ul-container">
+                <h2 class="ul-breadcrumb-title">Contact us</h2>
+                <ul class="ul-breadcrumb-nav">
+                    <li><a href="{% url 'home' %} ">Home</a></li>
+                    <li><span class="separator"><i class="flaticon-right"></i></span></li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </section>
+        <!-- BREADCRUMBS SECTION END -->
+
+
+        <!-- CONTACT INFOS SECTION START -->
+        <div class="ul-contact-infos">
+            <div class="ul-section-spacing ul-container">
+                <div class="row row-cols-md-3 row-cols-2 row-cols-xxs-1 ul-bs-row">
+                    <!-- single info -->
+                    <div class="col">
+                        <div class="ul-contact-info">
+                            <div class="icon"><i class="flaticon-phone-call"></i></div>
+                            <div class="txt">
+                                <span class="title">Phone number</span>
+                                <a href="tel:+442045770077">+234 806 078 4005</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single info -->
+                    <div class="col">
+                        <div class="ul-contact-info">
+                            <div class="icon"><i class="flaticon-comment"></i></div>
+                            <div class="txt">
+                                <span class="title">Email address</span>
+                                <a href="mailto:fandi@gmail.com">info@akajiugofoundation.org</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single info -->
+                    <div class="col">
+                        <div class="ul-contact-info">
+                            <div class="icon"><i class="flaticon-location"></i></div>
+                            <div class="txt">
+                                <span class="title">Office Address</span>
+                                <span class="descr">Umuna Ancient Palace, Umuna Town, Orlu LGA, Imo State</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT INFOS SECTION END -->
+
+
+<!-- MAPS SECTION START -->
+<div class="ul-contact-map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.618174298914!2d7.046800774991727!3d5.509900594471709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10427bd556a42617%3A0xd2db54c0c7a61374!2sUmuna%2C%20Orlu%20LGA%2C%20Imo%20State!5e0!3m2!1sen!2sng!4v1736955555555!5m2!1sen!2sng"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+<!-- MAPS SECTION END -->
+
+
+
+       <section class="ul-inner-contact ul-section-spacing">
+    <div class="ul-section-heading justify-content-center text-center">
+        <div>
+            <span class="ul-section-sub-title">Contact us</span>
+            <h2 class="ul-section-title">Feel Free To Write Us Anytime</h2>
+        </div>
+    </div>
+
+    <div class="ul-inner-contact-container">
+        <form id="contactForm" class="ul-contact-form ul-form">
+            {% csrf_token %}
+            <div class="row row-cols-2 row-cols-xxs-1 ul-bs-row">
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" name="name" id="ul-contact-name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="email" name="email" id="ul-contact-email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="subject" id="ul-contact-subject" placeholder="Subject" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea name="message" id="ul-contact-msg" placeholder="Type your message" required></textarea>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="button" id="contactSubmit" class="ul-btn">
+                        <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Get in Touch
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+    </main>
+
+
+    <footer class="ul-footer">
+       
+    <div class="ul-footer-middle">
+        <div class="ul-footer-container">
+            <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                
+                <!-- ABOUT -->
+                <div class="ul-footer-about">
+                    <a href="{% url 'home' %} ">
+                        <img src="{% static 'assets/img/logo_dark.png' %}" alt="Akajiugo Foundation Logo" class="logo">
+                    </a>
+                    <p class="ul-footer-about-txt">
+                        Akajiugo Charity Foundation is a social-cultural non-governmental organisation dedicated to the support, protection, and welfare of **women and children in Imo State**. We promote care, advocacy, cultural heritage, and community wellbeing.
+                    </p>
+                    <div class="ul-footer-socials">
+                        <a href="#"><i class="flaticon-facebook"></i></a>
+                        <a href="#"><i class="flaticon-twitter"></i></a>
+                        <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+                        <a href="#"><i class="flaticon-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="ul-footer-widget">
+                    <h3 class="ul-footer-widget-title">Quick Links</h3>
+
+                    <div class="ul-footer-widget-links">
+                        <a href="{% url 'about_us' %}">About Us</a>
+                        <a href="{% url 'projects' %}">Our Initiatives</a>
+                        <a href="{% url 'donate' %}">Make a Donation</a>
+                        <a href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="ul-footer-widget ul-nwsltr-widget">
+                    <h3 class="ul-footer-widget-title">Connect With Us</h3>
+                    
+                    <div class="ul-footer-widget-links ul-footer-contact-links">
+                        <a href="mailto:info@akajiugofoundation.org">
+                            <i class="flaticon-mail"></i> info@akajiugofoundation.org
+                        </a>
+                        <a href="tel:+2348060784005">
+                            <i class="flaticon-telephone-call"></i> +234 806 078 4005
+                        </a>
+                        <p class="mt-2 text-[14px] text-etGray">Umuna Town, Orlu LGA, Imo State, Nigeria</p>
+                    </div>
+                    
+                    <form action="#" class="ul-nwsltr-form">
+                        <div class="top">
+                            <input type="email" name="email" id="nwsltr-email" placeholder="Receive Updates via Email" class="ul-nwsltr-input" required>
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="flaticon-next"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="ul-footer-bottom">
+        <div class="ul-footer-container">
+            <div class="ul-footer-bottom-wrapper">
+                <p class="copyright-txt">
+                    &copy; <span id="footer-copyright-year">2025</span>
+                    <strong>Akajiugo Charity Foundation</strong>. All rights reserved.
+                </p>
+                <div class="ul-footer-bottom-nav">
+                    <a href="#">Terms & Conditions</a> 
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VECTORS -->
+    <div class="ul-footer-vectors">
+        <img src="{% static 'assets/img/footer-vector-img.png' %}" alt="Footer decorative image" class="ul-footer-vector-1">
+    </div>
+</footer>
+
+
+    <!-- libraries JS -->
+    <script src="{% static 'assets/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splide/splide.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splide/splide-extension-auto-scroll.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/slim-select/slimselect.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/animate-wow/wow.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/splittype/index.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/mixitup/mixitup.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/fslightbox/fslightbox.js' %}"></script>
+    <script src="{% static 'assets/vendor/flatpickr/flatpickr.js' %}"></script>
+
+    <!-- custom JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/tab.js' %}"></script>
+    <!-- <script src="assets/js/countdown.js' %}"></script> -->
+    <script src="{% static 'assets/js/accordion.js' %}"></script>
+    <script src="{% static 'assets/js/progressbar.js' %}"></script>
+
+    <!-- Include SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+document.getElementById('contactSubmit').addEventListener('click', function() {
+    let name = document.getElementById('ul-contact-name').value.trim();
+    let email = document.getElementById('ul-contact-email').value.trim();
+    let subject = document.getElementById('ul-contact-subject').value.trim();
+    let message = document.getElementById('ul-contact-msg').value.trim();
+
+    if (!name || !email || !subject || !message) {
+        Swal.fire('Error', 'Please fill all required fields.', 'error');
+        return;
+    }
+
+    fetch("{% url 'contact_send' %}", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": "{{ csrf_token }}"
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success") {
+            Swal.fire({
+                title: "Message Sent!",
+                text: data.message,
+                icon: "success",
+                confirmButtonText: "Close"
+            });
+            document.getElementById('contactForm').reset();
+        } else {
+            Swal.fire('Error', data.message, 'error');
+        }
+    })
+    .catch(err => {
+        Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+        console.error(err);
+    });
+});
+</script>
+
+</body>
+
+</html>
