@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'charity_p.urls'
@@ -137,12 +138,12 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-if DEBUG:
-   STATICFILES_DIRS = [os.path.join(BASE_DIR,'core/static')]
-   MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-else:
-  STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-  MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# if DEBUG:
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'core/static')]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# else:
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 load_dotenv()
 
@@ -195,3 +196,5 @@ SITE_URL = "https://akajiugocharityfoundation.org/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
