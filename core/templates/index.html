@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{% static 'assets/vendor/flatpickr/flatpickr.min.css' %}">
     <link rel="icon" href="{% static 'assets/img/favicon.ico' %}" type="image/png" />
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- Flaticon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/akzhy/Flaticon-Icon-Font@master/css/flaticon.css">
 
 
     <!-- Organization Schema -->
@@ -138,35 +140,26 @@
     </div>
     <!-- SIDEBAR SECTION END -->
 
-    <!-- SEARCH MODAL SECTION START -->
-    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
-        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
-
-        <form action="#" class="ul-search-form">
-            <div class="ul-search-form-right">
-                <input type="search" name="search" id="ul-search" placeholder="Search Here">
-                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
-            </div>
-        </form>
-    </div>
-    <!-- SEARCH MODAL SECTION END -->
+   
 
     <!-- HEADER SECTION START -->
     <header class="ul-header ul-header-2">
         <div class="ul-header-top">
             <div class="ul-header-top-wrapper ul-header-container">
+             <div class="ul-header-top-wrapper ul-header-container">
                 <div class="ul-header-top-left">
-                <span class="address"><i class="flaticon-pin"></i>Umuna Ancient Palace, Umuna Town, Orlu LGA, Imo State</span>
+                <span class="address">  <i class="flaticon-mail"></i>  info@akajiugocharityfoundation.org</span>
                 </div>
                 <div class="ul-header-top-right">
                    <div class="ul-header-top-social">
-                        <span class="title">Contact Us:</span>
+                        <span class="title"><i class="flaticon-telephone-call"></i> </span>
                         <div class="links">
                             <a href="tel:+2348060784005">+234 806 078 4005</a>
                         </div>
-                    </div>
+                </div>
 
                 </div>
+            </div>
             </div>
         </div>
         <div class="ul-header-bottom to-be-sticky">
@@ -208,7 +201,7 @@
 
                 <!-- actions -->
                 <div class="ul-header-actions">
-                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                 
                     <a href="{% url 'donate' %}" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i>Donate</a>
                     <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
                 </div>
