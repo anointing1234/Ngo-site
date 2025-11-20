@@ -17,12 +17,39 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include,re_path
 from django.conf import settings
-from django.views.static import serve 
+from django.views.static import serve
+from django.http import HttpResponse
+from django.contrib.sitemaps.views import sitemap
+# Import your sitemap
+from charity_app.sitemaps import StaticViewSitemap   # adjust app name if different
+
+sitemaps_dict = {
+    "static": StaticViewSitemap,
+}
+
+# Simple robots.txt view
+def robots_txt(request):
+    content = (
+        "User-Agent: *\n"
+        "Disallow:\n"
+        f"Sitemap: https://akajiugocharityfoundation.org/sitemap.xml\n"
+    )
+    return HttpResponse(content, content_type="text/plain")
+
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('charity_app.urls')),
+
+    
+    # Sitemap
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps_dict}, name="sitemap"),
+
+    # Robots.txt
+    path("robots.txt", robots_txt, name="robots_txt"),
+
     re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]

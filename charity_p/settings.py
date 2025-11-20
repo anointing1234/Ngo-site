@@ -38,8 +38,8 @@ DEBUG = False
 
 
 # ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://akajiugofoundation.org"]
-ALLOWED_HOSTS = ["akajiugofoundation.org"]
+CSRF_TRUSTED_ORIGINS = ["https://akajiugocharityfoundation.org"]
+ALLOWED_HOSTS = ["akajiugocharityfoundation.org"]
 
 
 # Application definition
@@ -188,7 +188,7 @@ else:
 # ----------------------
 # Site URL
 # ----------------------
-SITE_URL = "https://akajiugofoundation.org/"
+SITE_URL = "https://akajiugocharityfoundation.org/"
 
 
 # Default primary key field type
